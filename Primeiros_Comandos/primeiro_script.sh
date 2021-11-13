@@ -4,5 +4,5 @@
 # Esse é um script simples
 echo "Olá Mundo"
 echo
-echo "Prih Eu te amo sz"
+echo "Esse é meu primeiro script"
 
