@@ -25,7 +25,7 @@ USUARIOS="$(cat /etc/passwd | cut -d : -f 1)"
 
 # Aqui vamos apresentar um menu na tela
 TELA="
-  $0 - [OPÇÕES]
+  $(basename $0) - [OPÇÕES]
   
      v - Versão
      o - Ordenar a saída
@@ -55,8 +55,10 @@ fi
 	fi
 		if [ "$OPCAO" = "o" ]; then
 		   echo -e "\n$USUARIOS" | sort | less
+		   echo
 		fi
 			if [ "$OPCAO" = "s" ]; then
+			   echo
 			   exit
 			fi
 done
