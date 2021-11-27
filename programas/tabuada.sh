@@ -12,7 +12,7 @@
 echo "
 ---- Tabuada em shell script ----
 "
-#-------------- Iteração com usuário -------------------- 
+#-------------- Interação com usuário -------------------- 
     echo -n "Informe um número de 0 a 10:  "
 read multiplica
 
