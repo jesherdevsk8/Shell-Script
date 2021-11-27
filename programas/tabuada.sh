@@ -2,7 +2,7 @@
 
 # tabuada.sh - É uma tabuada em Shell Script
 #
-# Repositório:  https://github.com/jesherdevsk8/Shell-Script/programas/tabuada.sh
+# Repositório:  https://github.com/jesherdevsk8/Shell-Script/blob/master/programas/tabuada.sh
 # Autor:        Jesher Minelli
 #
 # Execução: 
