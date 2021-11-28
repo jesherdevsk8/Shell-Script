@@ -21,5 +21,5 @@ echo -e "\n\tTabuada do $multiplica\n"
 # ------------------- Execução --------------------------
 for i in $(seq 0 10)
 do
-    resultado=$(($i*$multiplica)); echo -e "\t$i x $multiplica = $resultado; less"
+    resultado=$(($i*$multiplica)); echo -e "\t$i x $multiplica = $resultado"
 done

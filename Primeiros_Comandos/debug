@@ -1,0 +1,13 @@
+para debugar um programa em bash
+use:
+	bash -x nome.sh
+	
+dentro do código use seq -x
+
+	for i in $(seq 0 10)
+do
+	set -x
+    resultado=$(($i*$multiplica)); echo -e "\t$i x $multiplica = $resultado; less"
+	set +x	
+done
+
