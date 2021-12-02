@@ -15,7 +15,7 @@ green="\033[32;1m"
 dois() {
   for (( i = 1; i <= 120; i++ )); do 
       echo -e ${cyan}"Contando _____ $i"; sleep 1
-      if [[ $i -eq 300 ]];then
+      if [[ $i -eq 120 ]];then
         echo -e ${red}"-- ACABOU SEU TEMPO --"
         echo -e ${red}"$(date)"
       fi
