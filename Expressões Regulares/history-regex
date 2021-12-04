@@ -1,0 +1,27 @@
+grep "^b" /etc/passwd
+grep "h$" /etc/passwd
+grep "^r.*h$" /etc/passwd
+grep "^b.*h$" /etc/passwd
+grep "^a.*h$" /etc/passwd
+grep "^p.*h$" /etc/passwd
+grep "^b" ~/
+grep "^u" ~/.bash_history 
+grep "^a" ~/.bash_history 
+egrep "^.{50,}$" /etc/passwd
+egrep "^.{50,60}$" /etc/passwd
+egrep "^.{90}$" /etc/passwd
+egrep "^.{90,}$" /etc/passwd
+egrep "[boyah|root]" /etc/passwd
+egrep "boyah|root" /etc/passwd
+egrep "^[boyah|root]" /etc/passwd
+egrep "[fish|zsh]$" /etc/passwd
+egrep "fish|zsh" /etc/passwd
+egrep "$USER|root" /etc/passwd
+history | egrep "^[sudo]"
+egrep "^[sudo|apt]" ~/.bash_history 
+egrep -n "^[sudo|apt]" ~/.bash_history 
+egrep -n "^sudo|apt" ~/.bash_history 
+egrep -n "^shutdown," ~/.bash_history 
+egrep -n "^shutdown" ~/.bash_history 
+egrep -n "^ssh," ~/.bash_history 
+egrep -n "^ssh" ~/.bash_history
