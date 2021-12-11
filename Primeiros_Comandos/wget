@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Comando if/then/else
+
+# Comando para ver se a internet está funcionando
+
+echo -e "Verificando a conexão com a internet...\n"
+sleep 2
+
+if wget -q --spider www.google.com; then
+  echo "....Tem internet"
+else
+  echo "Não tem internet..."
+fi
