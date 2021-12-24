@@ -6,6 +6,8 @@
 # Versão: 1.0
 # Licença: GPL
 
+RED="\033[31;1m"
+
 # ------------- FUNÇÃO
 
 EXTRAIR_LETRA() {
@@ -17,7 +19,8 @@ APAGAR_LINHAS_EM_BRANCO() {
 }
 
 MOSTRAR_CONTEUDO() {
-  cat letra.txt # Mostrando conteúdo na tela
+  #cat letra.txt # Mostrando conteúdo na tela
+  echo -e ${RED}"$(cat letra.txt)"
 }
 
 # ------------- TESTE
