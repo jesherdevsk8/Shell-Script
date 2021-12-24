@@ -14,6 +14,6 @@ eval $(./parser.sh $ARQUIVO_DE_CONFIGURACAO)
 [ "$(echo $CONF_USAR_CORES)" = "1" ] && USAR_CORES=1
 
 [ "$USAR_MAIUSCULAS" = "1" ] && MSG="$(echo $MSG | tr a-z A-Z)"
-[ "$USAR_CORES" = "1" ] && MSG="$(echo -E ${VERMELHO}$MSG)"
+[ "$USAR_CORES" = "1" ] && MSG="$(echo -e ${VERMELHO}$MSG)"
 
 echo -e "$MSG"
