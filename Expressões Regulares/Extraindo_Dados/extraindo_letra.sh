@@ -12,6 +12,14 @@ EXTRAIR_LETRA() {
   lynx -source https://www.letras.mus.br/"$artista"/"$musica"/ | grep premium | sed "s/<[^>]*>/\n/g;s/Adicionar.*Criar//g" > letra.txt
 }
 
+APAGAR_LINHAS_EM_BRANCO() {
+  sed -i "/^\s*$/d" letra.txt # apagando linhas vazias
+}
+
+MOSTRAR_CONTEUDO() {
+  cat letra.txt # Mostrando conteúdo na tela
+}
+
 # ------------- TESTE
 
 [ ! -x "$(which lynx)" ] && sudo apt install lynx -y # Lynx Instalado ?
@@ -29,13 +37,10 @@ read musica
 
 if [[ ! -z "$artista" && ! -z "$musica" ]];then
   EXTRAIR_LETRA
+  echo
+  APAGAR_LINHAS_EM_BRANCO
+  MOSTRAR_CONTEUDO
 else
   echo "Não encontrado"  
 fi
-
-sed -i "/^\s*$/d" letra.txt # apagando linhas vazias
-
-
-
-
 
