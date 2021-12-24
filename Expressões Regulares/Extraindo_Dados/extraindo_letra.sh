@@ -24,7 +24,6 @@ MOSTRAR_CONTEUDO() {
 
 [ ! -x "$(which lynx)" ] && sudo apt install lynx -y # Lynx Instalado ?
 
-
 # ------------- INTERAÇÃO COM USÚARIO
 
 echo -n "Informe o nome da banda ou cantor: "
@@ -39,8 +38,7 @@ if [[ ! -z "$artista" && ! -z "$musica" ]];then
   EXTRAIR_LETRA
   echo
   APAGAR_LINHAS_EM_BRANCO
-  MOSTRAR_CONTEUDO
+  MOSTRAR_CONTEUDO  
 else
   echo "Não encontrado"  
 fi
-
