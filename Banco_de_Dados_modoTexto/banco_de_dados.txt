@@ -1,7 +1,6 @@
 
-1:Jesher:jesher@gmail.com
-2:Priscilla:prihh@gmail.com
-3:Sophia:sophia@gmail.com
-4:Nicolle:nick@gmail.com
-5:Emilly:emyzinha@gmail.com
 # Banco de Dados de usuário
+1:Jesher:jesher@gmail.com
+2:Orivaldo:orivaldo@email.com
+3:Linus:linux@gmail.com
+4:Stallman:gnu@libre.io
