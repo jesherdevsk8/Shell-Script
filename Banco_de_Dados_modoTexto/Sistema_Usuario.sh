@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Autor: Jesher Minelli Alves, Repo:
+# Autor: Jesher Minelli Alves, Repo: https://github.com/jesherdevsk8/Shell-Script/blob/master/Banco_de_Dados_modoTexto/Sistema_Usuario.sh
 # Sistema_Usuario.sh - É um programa que cria uma base de dados, lista, insere e deleta 
 # Data: 24 dez 2021
 # Versão: 1.0.1 (26 dez 2021)
