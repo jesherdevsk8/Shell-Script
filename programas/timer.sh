@@ -14,40 +14,40 @@ green="\033[32;1m"
 
 dois() {
   for (( i = 1; i <= 120; i++ )); do 
-      echo -e ${cyan}"Contando _____ $i"; sleep 1
+      echo -ne ${cyan}"\rContando ...... $i"; sleep 1
       if [[ $i -eq 120 ]];then
-        echo -e ${red}"-- ACABOU SEU TEMPO --"
-        echo -e ${red}"$(date)"
+        echo -ne ${red}"\n-- ACABOU SEU TEMPO --"
+        echo -ne ${red}"\n$(date)\n"        
       fi
   done
 }
 
 cinco() {
   for (( i = 1; i <= 300; i++ )); do 
-      echo -e ${cyan}"Contando _____ $i"; sleep 1
+      echo -ne ${cyan}"\rContando ...... $i"; sleep 1
       if [[ $i -eq 300 ]];then
-        echo -e ${red}"-- ACABOU SEU TEMPO --"
-        echo -e ${red}"$(date)"
+        echo -ne ${red}"\n-- ACABOU SEU TEMPO --"
+        echo -ne ${red}"\n$(date)\n"
       fi
   done
 }
 
 dez() {
   for (( i = 1; i <= 600; i++ )); do 
-      echo -e ${cyan}"Contando _____ $i"; sleep 1
+      echo -ne ${cyan}"\rContando ...... $i"; sleep 1
       if [[ $i -eq 600 ]];then
-        echo -e ${red}"-- ACABOU SEU TEMPO --"
-        echo -e ${red}"$(date)"
+        echo -ne ${red}"\n-- ACABOU SEU TEMPO --"
+        echo -ne ${red}"\n$(date)\n"
       fi
   done
 }
 
 teste() {
   for (( i = 1; i <= 10; i++ )); do 
-      echo -e ${cyan}"Contando _____ $i"; sleep 1
+      echo -ne ${cyan}"\rContando ...... $i"; sleep 1
       if [[ $i -eq 10 ]];then
-        echo -e ${red}"-- ACABOU SEU TEMPO --"
-        echo -e ${red}"$(date)"
+        echo -ne ${red}"\n-- ACABOU SEU TEMPO --"
+        echo -ne ${red}"\n$(date)\n"
       fi
   done
 }
