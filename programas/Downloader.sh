@@ -50,8 +50,8 @@ youtube-dl "$url"
 while test -n "$1"
 do
   case "$1" in
-      -a) BAIXAR_AUDIO && exit 1                                     ;;
-      -v) BAIXAR_VIDEO && exit 1                                     ;;
+      -a) BAIXAR_AUDIO && exit 0                                     ;;
+      -v) BAIXAR_VIDEO && exit 0                                     ;;
        *) echo -e "Opção inválida, tente novamente......" && exit 1  ;;
   esac
   shift
