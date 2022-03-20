@@ -1,0 +1,11 @@
+Principais comandos sed editor de fluxo
+
+sed -e 's///' arquivo | s = substituir
+-e = imprime na tela mas não modifica o arquivo
+sed -e 's/ATUAL/SUBSTITUIR/' | esse comando vai substituir ATUAL por SUBSTITUIR
+sed -e '/PADRÃO/d' arquivo | d = deletar
+se -e '/^$/d' arquivo | irá apagar linhas vazias
+sed -e 's/palavra1\|palavra2\|palavra3/##########/' arquivo | irá substituir palavra* por ########
+
+sed -i
+-i = modifica o arquivo

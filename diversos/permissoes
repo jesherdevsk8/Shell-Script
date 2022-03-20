@@ -1,0 +1,37 @@
+   Permissẽs modo octal
+
+   g = group
+   o = outher
+   u = proprietario
+   a = all
+
+   + = adição
+   - = tirar
+
+   chmod g-rwx teste-perm/
+   chmod o-rwx teste-perm/
+   chmod g+rwx teste-perm/
+   chmod o+rwx teste-perm/
+   chmod o-w teste-perm/
+   chmod g-w teste-perm/
+   chmod a-rwx teste-perm/
+
+   mostrando histórico de comandos, filtrando com grep e colocando a saída do comando em um arquivo
+
+   52  history | grep chmod | tee permissoes 
+
+   Permissões modo decimal
+
+   r = read = leitura = 4
+   w = write = escrita = 2
+   x - exec = execução = 1
+
+   Dono/Proprietario - grupo - outros
+
+   Dono = leitura, escrita, execução - permissão total
+   Grupo = nenhuma permissão
+   Outros = leitura e execução 
+   
+   chmod 705 arquivo
+
+   chmod g-rwx,o-rwx teste/

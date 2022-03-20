@@ -1,0 +1,4 @@
+# Comando para saber quais portas estão abertas
+
+sudo lsof -i -P -n | grep LISTEN
+
