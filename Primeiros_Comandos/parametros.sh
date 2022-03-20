@@ -2,7 +2,7 @@
 
 red="\033[31;1m"
 green="\033[32;1m"
-tinha_cor="\033[m"
+tira_cor="\033[m"
 
 (($#==0)) && { echo -e "${red}Necessita nome do programa...${tira_cor}"; exit 1 ; }
 
