@@ -7,7 +7,7 @@ function usuario(){
 
 	read -p "Nome completo: " nome
 	
-	# Se o valor da variavel 'nome' for nuluo, atribui 'usuario$RANDOM'
+	# Se o valor da variavel 'nome' for nulo, atribui 'usuario$RANDOM'
 	nome=${nome:-usuario$RANDOM}
 	nome=${nome,,}
 
@@ -18,9 +18,9 @@ function usuario(){
 	usuario=${nome%% *}
 
 	echo -e "Usuario: $usuario \n"
-	#echo -e "Home: /home/$USUARIO \n"
-    	#echo "comando:"
-    	#echo '$ sudo adduser' $USUARIO
+	#echo -e "Home: /home/$usuario \n"
+  #echo "comando:"
+  #echo '$ sudo adduser' $usuario
 
 	return 0
 	#FIM
