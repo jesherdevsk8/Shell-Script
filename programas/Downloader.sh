@@ -1,12 +1,15 @@
 #! /usr/bin/env bash
 #
-# convert.sh - Baixa videos do youtube e converte para áudio
+# Downloader.sh - Baixa videos do youtube e converte para áudio
 #
 # Autor: Jesher Minelli - Github: jesherdevsk8
 # Data: 26/fev/2022
 # Versão: 1.0
 # Bash: versão 5.0.17
 #
+# Observações: No ubuntu foi preciso instalar youtube-dl com o pip
+#              sudo apt purge youtube-dl
+#              sudo apt install pip && sudo pip3 install youtube-dl
 #
 # ------ VARIAVEIS
 
