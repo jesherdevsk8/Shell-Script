@@ -42,11 +42,10 @@ youtube-dl "$url"
 }
 
 # ------ TESTES
-## Removendo travas eventuais do apt ##
-sudo rm /var/lib/dpkg/lock-frontend
-sudo rm /var/cache/apt/archives/lock
-
-sudo apt update # atualizando repositório
+## Remova travas eventuais do apt ##
+#sudo rm /var/lib/dpkg/lock-frontend
+#sudo rm /var/cache/apt/archives/lock
+#sudo apt update
 
 [ ! -x "$(type -P youtube-dl)" ] && sudo apt install youtube-dl -y #youtube-dl instalado?
 
