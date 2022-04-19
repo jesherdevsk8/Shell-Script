@@ -42,9 +42,15 @@ youtube-dl "$url"
 }
 
 # ------ TESTES
-[ ! -x "$(type -P youtube-dl)" ] && apt update && apt install youtube-dl -y #youtube-dl instalado?
+## Removendo travas eventuais do apt ##
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/cache/apt/archives/lock
 
-[ ! -x "$(type -P ffmpeg)" ] && apt install ffmpeg -y #ffmpeg instalado?
+sudo apt update # atualizando repositório
+
+[ ! -x "$(type -P youtube-dl)" ] && sudo apt install youtube-dl -y #youtube-dl instalado?
+
+[ ! -x "$(type -P ffmpeg)" ] && sudo apt install ffmpeg -y #ffmpeg instalado?
 
 # ------ EXECUÇÃO
 while test -n "$1"
