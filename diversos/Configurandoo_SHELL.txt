@@ -1,0 +1,24 @@
+Instalando fish e zsh
+
+Execute
+  echo $SHELL (para saber o shell padrão)
+
+Instale
+  apt install zsh fish
+
+Arquivo de configuração
+  cat /etc/passwd
+
+Execute:
+  which zsh ou type -P zsh
+
+Coloque a saída do comando 'which' após o 's'
+  usermod -s /usr/bin/zsh jesher
+  usermod -s /usr/bin/zsh root
+
+Verifique se foi alterado
+  grep 'zsh' /etc/passwd
+
+Faça logout
+escolha a opção 2  <-- configuração recomendada para as configurações padrão
+
