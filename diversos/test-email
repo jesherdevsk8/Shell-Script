@@ -1,0 +1,5 @@
+Email=jesherdevsk8@gmail.com
+
+if [[ "$Email" =~ [a-z]+@[a-z]{2,}\.(com|net|org) ]]; then
+  echo "Valid email"
+fi
