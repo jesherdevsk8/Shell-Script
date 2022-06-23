@@ -1,0 +1,11 @@
+# Tornando o bash em shell posix
+
+cd $HOME
+
+bash --posix
+
+ls -l /bin/sh
+
+ln -s /usr/bin/bash sh
+
+./sh
