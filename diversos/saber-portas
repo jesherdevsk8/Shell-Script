@@ -1,4 +1,6 @@
 # Comando para saber quais portas estão abertas
-
+## saber PID de processos e portas abertas 
+ps -ef | grep "mailcatcher"
 sudo lsof -i -P -n | grep LISTEN
-
+apt install netstat
+netstat -puta

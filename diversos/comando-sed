@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Retirar espaços e quebra de linha e colocar uma ',' virgula entre os ids
+
+# Cria um arquivo e coloque os ids
+vim regex
+
+# Após execute esse comando no mesmo diretório do arquivo criado a cima
+sed -i ':a;$!N;s/\n/,/;ta;' regex && cat regex
+
+# Trocar dono de diretórios
+# sudo chown -R root:usuario /opt/apache-tomcat
+
